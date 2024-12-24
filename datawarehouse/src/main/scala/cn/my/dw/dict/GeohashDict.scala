@@ -38,7 +38,7 @@ object GeohashDict {
 
     //保存结果
     res.write.parquet("data/dict/geo_dict/output")
-    //feature1
+    //feature1feature2
     spark.close()
   }
 }

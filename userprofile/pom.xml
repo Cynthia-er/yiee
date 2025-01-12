@@ -9,4 +9,32 @@
     <artifactId>userprofile</artifactId>
     <name>Archetype - userprofile</name>
     <url>http://maven.apache.org</url>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-mllib_2.12</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.12</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hankcs</groupId>
+            <artifactId>hanlp</artifactId>
+            <version>portable-1.7.4</version>
+        </dependency>
+
+    </dependencies>
 </project>

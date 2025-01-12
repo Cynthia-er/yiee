@@ -10,7 +10,7 @@ object GeohashDict {
   def main(args: Array[String]): Unit = {
 
     //构造spark
-    val spark = SparkUtil.getSparkSession(this.getClass.getSimpleName)
+    val spark = SparkUtil.getSparkSession(this.getClass.getSimpleName,"local[*]",Map.empty,ifHive = false)
     import spark.implicits._
 
     //提取mysql中的gps左表地理位置表

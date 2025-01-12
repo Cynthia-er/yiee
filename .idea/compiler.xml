@@ -7,6 +7,7 @@
       <directory url="file://$PROJECT_DIR$/userprofile/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/recommend/src/main/resources/archetype-resources" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/commons/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/datawarehouse/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -16,10 +17,14 @@
         <module name="userprofile" />
         <module name="olap_web" />
         <module name="recommend" />
-        <module name="dataware" />
+        <module name="datawarehouse" />
         <module name="commons" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dataWare" target="1.8" />
+      <module name="dataware" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

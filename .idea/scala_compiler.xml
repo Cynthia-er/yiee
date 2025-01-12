@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="yiee">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\IdeaProjects\yiee\target/.scala dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 2" modules="commons">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\IdeaProjects\yiee\commons\target/.scala dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 3" modules="recommend">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\IdeaProjects\yiee\recommend\target/.scala dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 4" modules="userprofile">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\IdeaProjects\yiee\userprofile\target/.scala dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 5" modules="dataWare,dataware">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\IdeaProjects\yiee\dataware\target/.scala dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 6" modules="dw">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\IdeaProjects\yiee\dw\target/.scala dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 7" modules="datawarehouse">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\IdeaProjects\yiee\datawarehouse\target/.scala dependencies" />
+      </parameters>
+    </profile>
+  </component>
+</project>

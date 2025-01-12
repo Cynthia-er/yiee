@@ -9,10 +9,11 @@
   <name>Archetype - yiee</name>
   <url>http://maven.apache.org</url>
   <modules>
-    <module>dataware</module>
     <module>userprofile</module>
     <module>recommend</module>
     <module>commons</module>
+    <module>olap_web</module>
+    <module>datawarehouse</module>
   </modules>
 
   <properties>
@@ -40,13 +41,6 @@
       <artifactId>spark-sql_2.12</artifactId>
       <version>${spark.version}</version>
 
-      <exclusions>
-        <exclusion>
-          <groupId>org.apache.hadoop</groupId>
-          <artifactId>hadoop-hdfs</artifactId>
-        </exclusion>
-      </exclusions>
-
     </dependency>
 
     <dependency>
@@ -62,20 +56,26 @@
     </dependency>
 
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
-      <artifactId>hadoop-hdfs</artifactId>
-      <version>3.3.2</version>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>${fastjson.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.17.0</version>
     </dependency>
 
   </dependencies>
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>fastjson</artifactId>
-        <version>${fastjson.version}</version>
-      </dependency>
+<!--      <dependency>-->
+<!--        <groupId>com.alibaba</groupId>-->
+<!--        <artifactId>fastjson</artifactId>-->
+<!--        <version>${fastjson.version}</version>-->
+<!--      </dependency>-->
     </dependencies>
   </dependencyManagement>
 
